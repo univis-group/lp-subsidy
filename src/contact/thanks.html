@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <%= htmlWebpackPlugin.options.head %>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body>
+  <%= htmlWebpackPlugin.options.header %>
+  <main id="primary" class="py-8 lg:py-20 bg-very-light-blue">
+    <div class="max-w-5xl px-4 mx-auto">
+      <div class="px-8 py-8 bg-white lg:px-28 lg:py-16">
+        <h2 class="text-2xl font-medium c-title-1 lg:text-4xl">お問い合わせ<span class="c-title-1-bar"></span></h2>
+        <div class="p-6 lg:px-12 lg:pb-12 bg-very-light-blue">
+          <p class="mb-4 text-xl font-bold text-center">送信が完了しました。</p>
+          <p class="mb-3">このたびは、当社へお問い合わせいただきありがとうございます。</p>
+          <p class="mb-3">メールフォームにご記入いただいたメールアドレスへ、お問い合わせ内容の確認メールをお送りいたしました。</p>
+          <p>弊社でお問い合わせ内容を確認の上、1-2営業日以内にお返事いたします。</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <%= htmlWebpackPlugin.options.footer %>
+</body>
+
+</html>

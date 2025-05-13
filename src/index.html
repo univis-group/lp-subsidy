@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <%= htmlWebpackPlugin.options.head %>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <!--メールフォームプロ用CSS-->
+  <link rel="stylesheet" href="./mailform/mfp.statics/mailformpro.css" type="text/css">
+</head>
+
+<body>
+  <%= htmlWebpackPlugin.options.header %>
+  <main>
+    <section class="bg-center bg-cover hero px-2 py-12 md:px-8">
+      <div class="flex flex-col xl:flex-row items-center justify-center lg:justify-between max-w-screen-2xl mx-auto">
+        <div class="py-24 px-6">
+          <div class="my-10">
+            <div class="font-bold text-xl leading-relaxed lg:leading-relaxed lg:text-3xl p-6">
+              フリーランスコンサルタント人材向け<br/>
+              案件ご紹介サービス
+            </div>
+            <p class="p-6">
+              本サービスはコンサルタント経験のあるフリーランスを対象とした、<br/>
+              独自案件・高単価案件をご紹介するプロジェクトマッチングサービスです
+            </p>
+          </div>
+          <ul>
+            <li class="relative px-4 py-3 text-white lg:px-6 lg:py-4 c-block-reveal text-md 2xl:text-xl text-center" data-delay="1">
+              <span class="c-block-reveal-text">高単価案件多数(150～250万/月)</span>
+              <span class="absolute inset-0 c-block-reveal-bg bg-dark-grey-blue"></span>
+            </li>
+            <li class="relative px-4 py-3 text-white lg:px-6 lg:py-4 c-block-reveal text-md 2xl:text-xl text-center" data-delay="2">
+              <span class="c-block-reveal-text">常時案件300件以上＆戦略・業務案件多数</span>
+              <span class="absolute inset-0 c-block-reveal-bg bg-dark-grey-blue"></span>
+            </li>
+            <li class="relative px-4 py-3 text-white lg:px-6 lg:py-4 c-block-reveal text-md 2xl:text-xl text-center" data-delay="3">
+              <span class="c-block-reveal-text">コンサルファーム出身者向け案件多数</span>
+              <span class="absolute inset-0 c-block-reveal-bg bg-dark-grey-blue"></span>
+            </li>
+          </ul>
+        </div>
+        <div id="contact" class="max-w-2xl px-4 mx-auto py-16">
+          <div class="px-8 py-8 bg-white">
+            <h2 class="text-2xl font-medium c-title-1">フリーコンサル登録フォーム
+              <span class="c-title-1-bar"></span>
+            </h2>
+            <div class="bg-dark-grey-blue text-white p-4 my-8">
+              登録いただいたフリーコンサルの方にはスキル確認と案件紹介のご連絡をさせていただきます。
+            </div>
+            <div>
+              <form id="mailformpro" action="../mailform/mailformpro/mailformpro.cgi" method="POST">
+                <div class="space-y-6">
+                  <div class="grid-cols-3 space-y-2 lg:grid lg:space-y-0">
+                    <label class="flex items-center" for="your-name">お名前<span class="c-badge">必須</span></label>
+                    <div class="lg:col-span-2">
+                      <input type="text" class="mfp_element_text mfp_element_all" name="お名前" id="your-name" size="40" required="required" placeholder="例：山田　太郎">
+                    </div>
+                  </div>
+                  <div class="grid-cols-3 space-y-2 lg:grid lg:space-y-0">
+                    <label class="flex items-center" for="your-phone">電話番号<span class="c-badge">必須</span></label>
+                    <div class="lg:col-span-2">
+                      <input type="tel" class="mfp_element_tel mfp_element_all" data-type="tel" name="電話番号" id="your-phone" size="40" data-min="9" required="required" placeholder="例：03-6459-0142">
+                    </div>
+                  </div>
+                  <div class="grid-cols-3 space-y-2 lg:grid lg:space-y-0">
+                    <label class="flex items-center" for="your-email">メールアドレス
+                      <span class="c-badge">必須</span>
+                    </label>
+                    <div class="lg:col-span-2">
+                      <input type="email" class="mfp_element_email mfp_element_all" data-type="email" name="email" id="your-email" size="40" required="required" placeholder="例：contact@univis.co.jp" />
+                    </div>
+                  </div>
+                  <div class="items-start grid-cols-3 space-y-2 lg:grid lg:space-y-0">
+                    <label class="flex items-center">経歴
+                      <span class="c-badge">必須</span>
+                      <span class="c-badge">複数選択可</span>
+                    </label>
+                    <div class="lg:col-span-2 flex flex-col gap-3 ml-3 lg:ml-0">
+                      <label>
+                        <input type="checkbox" class="mb-1 mr-2" name="経歴" required="required" data-min="1" value="コンサルティングファーム">
+                        <span>コンサルティングファーム</span>
+                      </label>
+                      <label>
+                        <input type="checkbox" class="mb-1 mr-2" name="経歴" required="required" value="シンクタンク">
+                        <span>シンクタンク</span>
+                      </label>
+                      <label>
+                        <input type="checkbox" class="mb-1 mr-2" name="経歴" required="required" value="SIer">
+                        <span>SIer</span>
+                      </label>
+                      <label>
+                        <input type="checkbox" class="mb-1 mr-2" name="経歴" required="required" value="事業会社">
+                        <span>事業会社</span>
+                      </label>
+                      <label>
+                        <input type="checkbox" class="mb-1 mr-2" name="経歴" required="required" value="その他">
+                        <span>その他</span>
+                      </label>
+                      <div id="errormsg_経歴" class="mfp_err"></div>
+                    </div>
+                  </div>
+                  <div class="space-y-2 lg:space-y-0">
+                    <p class="mb-4 text-center text-sm">
+                      ご入力いただいた個人情報は、お客様からのお問い合わせに対し適切に対応するために使用します。
+                      詳しくは<a href="https://univis.co.jp/privacy-policy/" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; text-decoration-color:#000;">プライバシーポリシー</a>をご確認ください。
+                    </p>
+                    <div class="flex justify-center">
+                      <div><label><input type="checkbox" class="mb-1 mr-2" name="プライバシーポリシー" required="required">プライバシーポリシーに同意する</span></label></div>
+                    </div>
+                  </div>
+                  <div class="mfp_buttons text-center">
+                    <button type="submit" class="text-white text-lg bg-deep-sea-blue hover:bg-deep-sea-blue-dark py-3 px-12 mfp_element_submit mfp_element_all">登録</button>
+                  </div>
+                </div>
+              </form>
+              <script type="text/javascript" id="mfpjs" src="./mailform/mailformpro/mailformpro.cgi" charset="UTF-8"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="pt-12 pb-24 bg-bottom bg-cover lg:pt-32 lg:pb-48 lead">
+        <div class="container px-3 mx-auto lg:px-6">
+          <h2 data-aos="fade-up" class="relative mb-12 leading-relaxed text-center lg:mb-20 rfs:text-4xl">サービスの特徴<span class="absolute w-40 h-0.5 transform -translate-x-1/2 bg-sky-600 -bottom-6 left-1/2"></span></h2>
+          <ul class="max-w-full mx-auto lg:text-2xl lg:min-w-[800px] lg:w-max space-y">
+            <li data-aos="fade-up" class="flex flex-col gap-2 items-baseline py-3 border-b border-black border-dotted lg:py-5">
+              <div>
+                <i class="mr-6 fas fa-check text-dark-blue"></i>
+                <span class="c-normal-marker-blue font-bold">上流案件＆非公開案件多数</span>
+              </div>
+              <p class="px-12 w-full text-base lg:text-lg max-w-4xl mx-auto">
+                戦略ファームや事業会社を中心にフリーランスの方々の紹介依頼を多数いただいております。案件によっては機密性が高く他社では取り扱ってない案件をご紹介可能です。
+              </p>
+            </li>
+            <li data-aos="fade-up" class="flex flex-col gap-2 items-baseline py-3 border-b border-black border-dotted lg:py-5">
+              <div>
+                <i class="mr-6 fas fa-check text-dark-blue"></i>
+                <span class="c-normal-marker-blue font-bold">営業代行＆登録料等不要</span>
+              </div>
+              <p class="px-12 w-full text-base lg:text-lg max-w-4xl mx-auto">
+                企業様より一律で紹介料を頂く形をとっておりますので、フリーランスの方は負担なしで案件の営業代行として当サービスをご利用できます。
+              </p>
+            </li>
+            <li data-aos="fade-up" class="flex flex-col gap-2 items-baseline py-3 border-b border-black border-dotted lg:py-5">
+              <div>
+                <i class="mr-6 fas fa-check text-dark-blue"></i>
+                <span class="c-normal-marker-blue font-bold">高い報酬</span>
+              </div>
+              <p class="px-12 w-full text-base lg:text-lg max-w-4xl mx-auto">
+                弊社は営業活動の効率化と多重下請構造へのテコ入れを行っているため、他社サービスよりより高い報酬をフリーランスの方に還元します。
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="relative py-16 pl-4 c-cta bg-dark-grey-blue xl:pl-24">
+      <div class="container max-w-5xl px-4 mx-auto">
+        <div data-aos="fade-up" class="max-w-5xl px-6 py-16 bg-white shadow-lg">
+          <h2 class="mb-5 text-2xl font-bold text-center text-sky-950 lg:text-3xl"><span class="inline-block">ユニヴィスグループの案件ご紹介サービス</span></h2>
+          <p class="mb-10 lg:text-center">ご相談は、お電話またはコンサル登録フォームで承っております。</p>
+          <div class="grid max-w-xl mx-auto gap-y-4 lg:grid-cols-2 gap-x-8">
+            <a class="inline-flex items-center justify-center px-5 leading-none text-white transition-colors py-7 gap-x-4 bg-dark-grey-blue hover:bg-dark-grey-blue-dark" href="tel:03-6459-0142"><i class="fas fa-phone-alt"></i><span class="text-lg leading-none">03-6459-0142</span><i class="fas fa-chevron-right"></i></a>
+            <a class="inline-flex items-center justify-center px-5 leading-none text-white transition-colors py-7 gap-x-4 bg-deep-sea-blue hover:bg-deep-sea-blue-dark" id="link-contact-a"><i class="fas fa-envelope"></i><span class="text-lg leading-none">コンサル登録</span><i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="project" class=" ">
+      <div class="py-12 lg:py-24">
+        <div class="container max-w-7xl px-4 mx-auto">
+          <h2 data-aos="fade-up" class="relative mb-12 leading-relaxed text-center lg:mb-20 rfs:text-4xl">案件<span class="absolute w-40 h-0.5 transform -translate-x-1/2 bg-sky-600 -bottom-6 left-1/2"></span></h2>
+          <div class="grid grid-cols-1 lg:grid-cols-3 items-center lg:items-stretch justify-center gap-6">
+            <div class="justify-self-center bg-slate-50 border border-gray-200 rounded-lg shadow col-span-1">
+              <img class="rounded-t-lg" src="./img/card1.png" alt="" />
+              <h5 class="mx-4 mt-3 mb-6 text-2xl font-bold text-gray-900">(戦略系) 大手メーカーロジスティクス部門の中長期戦略策定</h5>
+              <ul class="bg-white mx-2 my-3 py-2">
+                <li class="my-2">
+                  【役割／タスク】
+                  <ul class="pl-3">
+                    <li>・社内のステークホルダーやサプライヤーからの期待やニーズのヒアリング</li>
+                    <li>・他社のビジョン調査</li>
+                    <li>・ワークショップ運営、戦略課題整理、ロードマップ作成</li>
+                    <li>・中間報告、最終報告資料の作成</li>
+                  </ul>
+                </li>
+                <li class="my-2">【月額報酬】200万円</li>
+                <li class="my-2">【稼働率】50～100%</li>
+              </ul>
+            </div>
+            <div class="justify-self-center bg-slate-50 border border-gray-200 rounded-lg shadow col-span-1">
+              <img class="rounded-t-lg" src="./img/card1.png" alt="" />
+              <h5 class="mx-4 mt-3 mb-6 text-2xl font-bold text-gray-900">(戦略系) 大手ファンド向けDD(デューデリジェンス)支援</h5>
+              <ul class="bg-white mx-2 my-3 py-2">
+                <li class="my-2">
+                  【役割／タスク】
+                  <ul class="pl-3">
+                    <li>・市場/競合調査</li>
+                    <li>・エキスパートインタビュー</li>
+                    <li>・資料作成</li>
+                    <li>・モデル構成支援</li>
+                  </ul>
+                </li>
+                <li class="my-2">【月額報酬】250万円</li>
+                <li class="my-2">【稼働率】100%</li>
+              </ul>
+            </div>
+            <div class="justify-self-center bg-slate-50 border border-gray-200 rounded-lg shadow col-span-1">
+              <img class="rounded-t-lg" src="./img/card1.png" alt="" />
+              <h5 class="mx-4 mt-3 mb-6 text-2xl font-bold text-gray-900">(戦略/業務) 某電力会社向けメーカー新サービス構築の構想策定</h5>
+              <ul class="bg-white mx-2 my-3 py-2">
+                <li class="my-2">
+                  【役割／タスク】
+                  <ul class="pl-3">
+                    <li>・新サービスの企画および計画作成に関するPMO業務</li>
+                    <li>・経営フレームワークを活用し自走支援</li>
+                  </ul>
+                </li>
+                <li class="my-2">【月額報酬】200万円</li>
+                <li class="my-2">【稼働率】100%</li>
+              </ul>
+            </div>
+            <div class="justify-self-center bg-slate-50 border border-gray-200 rounded-lg shadow col-span-1">
+              <img class="rounded-t-lg" src="./img/card1.png" alt="" />
+              <h5 class="mx-4 mt-3 mb-6 text-2xl font-bold text-gray-900">(業務) 大手自動車メーカーにおける生産部門のPMO支援</h5>
+              <ul class="bg-white mx-2 my-3 py-2">
+                <li class="my-2">
+                  【役割／タスク】
+                  <ul class="pl-3">
+                    <li>・定例会参加、議事録作成、TODO整理</li>
+                    <li>・検証結果や課題の資料作成</li>
+                    <li>・対策検討</li>
+                    <li>・会議アジェンダの検討</li>
+                  </ul>
+                </li>
+                <li class="my-2">【月額報酬】250万円</li>
+                <li class="my-2">【稼働率】100%</li>
+              </ul>
+            </div>
+            <div class="justify-self-center bg-slate-50 border border-gray-200 rounded-lg shadow col-span-1">
+              <img class="rounded-t-lg" src="./img/card1.png" alt="" />
+              <h5 class="mx-4 mt-3 mb-6 text-2xl font-bold text-gray-900">(IT/DX) 大手飲料会社向けSCM更改案件支援</h5>
+              <ul class="bg-white mx-2 my-3 py-2">
+                <li class="my-2">
+                  【役割／タスク】
+                  <ul class="pl-3">
+                    <li>・開発PMOとして顧客調整・推進支援</li>
+                    <li>・資料整理と作成</li>
+                  </ul>
+                </li>
+                <li class="my-2">【月額報酬】180万円</li>
+                <li class="my-2">【稼働率】50～100%</li>
+              </ul>
+            </div>
+            <div class="justify-self-center bg-slate-50 border border-gray-200 rounded-lg shadow col-span-1">
+              <img class="rounded-t-lg" src="./img/card1.png" alt="" />
+              <h5 class="mx-4 mt-3 mb-6 text-2xl font-bold text-gray-900">(IT/システム刷新) 大規模基幹システムのリプレースにおけるテスト推進PMOリーダー</h5>
+              <ul class="bg-white mx-2 my-3 py-2">
+                <li class="my-2">
+                  【役割／タスク】
+                  <ul class="pl-3">
+                    <li>・大規模基幹システムのリプレースの総合テストフェーズにおける、テスト推進PMOリーダーとして支援していただく</li>
+                    <li>・全体進捗、タスクの管理</li>
+                    <li>・部署間のタスク管理、推進等を横断して行う</li>
+                    <li>・品質、リスク、課題の管理</li>
+                  </ul>
+                </li>
+                <li class="my-2">【月額報酬】210万円</li>
+                <li class="my-2">【稼働率】～100%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="flow" class=" ">
+      <div class="py-12 lg:py-24">
+        <div class="container max-w-6xl px-4 mx-auto">
+          <h2 data-aos="fade-up" class="mb-10 leading-relaxed text-center lg:mb-20 rfs:text-4xl">お申込みの流れ<br>Flow</h2>
+          <div class="space-y-6">
+            <section data-aos="fade-up" class="bg-white shadow-lg">
+              <h3 class="relative p-4 text-xl text-center text-white lg:text-3xl bg-dark-grey-blue"><span class="mr-3 transform -translate-y-1/2 lg:mr-0 lg:absolute top-1/2 left-12">01</span>エントリー</h3>
+              <div class="p-4">
+                <p class="prose lg:prose-lg max-w-4xl mx-auto">お気軽に電話又はコンサル登録フォームからご登録下さい</p>
+              </div>
+            </section>
+            <img class="mx-auto" src="./img/arrow-lg-down-blue.svg" width="86" height="auto" alt="down">
+            <section data-aos="fade-up" class="bg-white shadow-lg">
+              <h3 class="relative p-4 text-xl text-center text-white lg:text-3xl bg-dark-grey-blue"><span class="mr-3 transform -translate-y-1/2 lg:mr-0 lg:absolute top-1/2 left-12">02</span>ご登録面談</h3>
+              <div class="p-4">
+                <p class="prose lg:prose-lg max-w-4xl mx-auto">
+                  弊社の企業担当が直接面談を実施し、ご経験やご希望を詳細にお伺いします。
+                </p>
+              </div>
+            </section>
+            <img class="mx-auto" src="./img/arrow-lg-down-blue.svg" width="86" height="auto" alt="down">
+            <section data-aos="fade-up" class="bg-white shadow-lg">
+              <h3 class="relative p-4 text-xl text-center text-white lg:text-3xl bg-dark-grey-blue"><span class="mr-3 transform -translate-y-1/2 lg:mr-0 lg:absolute top-1/2 left-12">03</span>案件ご紹介・面談</h3>
+              <div class="p-4">
+                <p class="prose lg:prose-lg max-w-4xl mx-auto">
+                  ご希望に沿った案件をデータベースからご紹介。<br/>
+                  ご面談の対策などサポートいたします。
+                </p>
+              </div>
+            </section>
+            <img class="mx-auto" src="./img/arrow-lg-down-blue.svg" width="86" height="auto" alt="down">
+            <section data-aos="fade-up" class="bg-white shadow-lg">
+              <h3 class="relative p-4 text-xl text-center text-white lg:text-3xl bg-dark-grey-blue"><span class="mr-3 transform -translate-y-1/2 lg:mr-0 lg:absolute top-1/2 left-12">04</span>入場・フォローアップ</h3>
+              <div class="p-4">
+                <p class="prose lg:prose-lg max-w-4xl mx-auto">
+                  プロジェクト入場後についても弊社の担当者が定期的にフォロー。<br />
+                  プロジェクト終了後も継続的な案件受注に繋がる支援を行います。
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="relative py-16 pl-4 c-cta bg-dark-grey-blue xl:pl-24">
+      <div class="container max-w-5xl px-4 mx-auto">
+        <div data-aos="fade-up" class="max-w-5xl px-6 py-16 bg-white shadow-lg">
+          <h2 class="mb-5 text-2xl font-bold text-center text-sky-950 lg:text-3xl"><span class="inline-block">ユニヴィスグループの案件ご紹介サービス</span></h2>
+          <p class="mb-10 lg:text-center">ご相談は、お電話またはコンサル登録フォームで承っております</p>
+          <div class="grid max-w-xl mx-auto gap-y-4 lg:grid-cols-2 gap-x-8">
+            <a class="inline-flex items-center justify-center px-5 leading-none text-white transition-colors py-7 gap-x-4 bg-dark-grey-blue hover:bg-dark-grey-blue-dark" href="tel:03-6459-0142"><i class="fas fa-phone-alt"></i><span class="text-lg leading-none">03-6459-0142</span><i class="fas fa-chevron-right"></i></a>
+            <a class="inline-flex items-center justify-center px-5 leading-none text-white transition-colors py-7 gap-x-4 bg-deep-sea-blue hover:bg-deep-sea-blue-dark" id="link-contact-b"><i class="fas fa-envelope"></i><span class="text-lg leading-none">コンサル登録</span><i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pt-16 pb-10 lg:pt-28 lg:pb-14">
+      <div class="max-w-5xl px-4 mx-auto">
+        <h2 class="mb-12 text-xl text-center lg:text-3xl">会社概要</h2>
+        <div class="grid gap-12 lg:grid-cols-12">
+          <div class="lg:text-lg lg:col-span-7">
+            <dl>
+              <div class="py-5 border-t border-b lg:flex border-brown-grey">
+                <dt class="w-32 mb-2 lg:text-center lg:mb-0">グループ名</dt>
+                <dd class="text-greyish-brown">ユニヴィスグループ（Univis Group）</dd>
+              </div>
+              <div class="py-5 border-b lg:flex border-brown-grey">
+                <dt class="w-32 mb-2 lg:text-center lg:mb-0">所在地</dt>
+                <dd class="text-greyish-brown">
+                  <address class="not-italic">〒105-0001<br>東京都港区虎ノ門3-8-8 NTT虎ノ門ビル6階</address>
+                </dd>
+              </div>
+              <div class="py-5 border-b lg:flex border-brown-grey">
+                <dt class="w-32 mb-2 lg:text-center lg:mb-0">電話番号</dt>
+                <dd class="text-greyish-brown"><a class="transition-opacity hover:opacity-70" href="tel:03-6459-0142">03-6459-0142</a></dd>
+              </div>
+              <div class="py-5 border-b lg:flex border-brown-grey">
+                <dt class="w-32 mb-2 lg:text-center lg:mb-0">メール</dt>
+                <dd class="text-greyish-brown">contact@univis.co.jp</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="lg:col-span-5">
+            <div class="mx-auto aspect-w-10 aspect-h-9">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12965.752927661608!2d139.7477196!3d35.66621!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x86e4a45321b9ec8b!2z5qCq5byP5Lya56S-44Om44OL44O044Kj44K5!5e0!3m2!1sja!2sjp!4v1634475306868!5m2!1sja!2sjp" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <%= htmlWebpackPlugin.options.footer %>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+/* styles.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* tailwind customize */
+@layer base {
+  body {
+    @apply font-serif font-medium leading-relaxed tracking-wider text-black;
+  }
+}
+
+@layer components {
+  .c-block-reveal-text {
+    opacity: 0;
+  }
+  .c-block-reveal-bg {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  }
+
+  .c-marker {
+    @apply absolute left-0 w-0 h-2 bottom-1 bg-wheat;
+  }
+
+  .c-title-1 {
+    @apply relative mb-12 text-center;
+  }
+
+  .c-title-1-bar {
+    @apply absolute block w-20 h-px transform -translate-x-1/2 bg-black left-1/2 -bottom-5;
+  }
+
+  .c-badge {
+    @apply inline-block px-3 py-1 ml-2 text-xs text-white rounded-full bg-deep-sea-blue;
+  }
+}
+
+@layer utilities {
+  .border-t-32 {
+    border-top-width: 32px;
+  }
+
+  .content-container {
+    display: grid;
+    grid-template-columns: 1rem 1fr;
+  }
+
+  @screen xl {
+    .content-container {
+      grid-template-columns: 6rem 1fr;
+    }
+  }
+
+  .reason-item {
+    box-shadow: 15px 15px 0px theme("colors.dark-red.DEFAULT");
+  }
+}
+
+/* additional styles */
+[x-cloak] {
+  display: none;
+}
+
+.hero {
+  background-image: url(../img/hero-bg.png);
+}
+
+.lead {
+  background-image: url(../img/lead-bg.png);
+}
+
+.c-normal-marker-blue {
+  background: linear-gradient(transparent 60%, #e4ecf8 0);
+}
+
+/* override mfp styles */
+div.mfp_err {
+  @apply m-0 p-0;
+  color: #dc3232;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: inherit;
+  background-image: none;
+}
+
+.mfp_element_text, 
+.mfp_element_number, 
+.mfp_element_select-one, 
+.mfp_element_email, 
+.mfp_element_tel, 
+.mfp_element_textarea, 
+.mfp_element_date, 
+.mfp_element_password {
+  @apply w-full border-gray-400 bg-gray-50;
+}
+
+.mfp_element_all {
+  @apply max-w-full;
+}
