@@ -8,14 +8,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="site-branding pl-4">
         <h1 class="site-title">
           <a class="js-moveto" id="header-home">
-            <img class="img-fluid hidden" id="header-logo" alt="ユニヴィスの案件ご紹介サービス" width="100" height="auto">
+            <img class="img-fluid hidden" id="header-logo" alt="ユニヴィスの補助金申請支援" width="100" height="auto">
           </a>
         </h1>
       </div>
       <div class="flex ml-auto">
         <nav class="items-center hidden mr-8 leading-none gap-x-8 xl:flex">
-          <a class="js-moveto" id="header-project">
-            <i class="mr-3 fas fa-chevron-down"></i>案件
+          <a class="js-moveto" id="header-price">
+            <i class="mr-3 fas fa-chevron-down"></i>支援費用
+          </a>
+          <a class="js-moveto" id="header-features">
+            <i class="mr-3 fas fa-chevron-down"></i>特徴
           </a>
           <a class="js-moveto" id="header-flow">
             <i class="mr-3 fas fa-chevron-down"></i>お申込みの流れ
@@ -27,9 +30,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <span class="text-lg leading-none">03-6459-0142</span>
             <i class="fas fa-chevron-right"></i>
           </a>
-          <a class="inline-flex items-center px-5 py-5 leading-none text-white transition-colors gap-x-4 bg-deep-sea-blue hover:bg-deep-sea-blue-dark" id="header-contact">
+          <a class="inline-flex items-center px-5 py-5 leading-none text-white transition-colors gap-x-4 bg-deep-sea-blue hover:bg-deep-sea-blue-dark js-moveto" id="header-contact">
             <i class="fas fa-envelope"></i>
-            <span class="text-lg leading-none">コンサル登録</span>
+            <span class="text-lg leading-none">お問い合わせ</span>
             <i class="fas fa-chevron-right"></i>
           </a>
         </div>
@@ -46,7 +49,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 <div x-data x-cloak x-show="$store.mobileNavigation.isOpen" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" id="mobile-navigation" class="fixed inset-x-0 bottom-0 z-20 bg-white mobile-navigation top-14" :aria-hidden="!$store.mobileNavigation">
   <div class="grid px-6 py-10 text-2xl font-bold text-dark-grey-blue gap-y-6 mobile-navigation-bottom">
-    <a class="js-moveto" @click="$store.mobileNavigation.toggle();" id="header-sp-project">案件</a>
+    <a class="js-moveto" @click="$store.mobileNavigation.toggle();" id="header-sp-price">支援費用</a>
+    <a class="js-moveto" @click="$store.mobileNavigation.toggle();" id="header-sp-features">特徴</a>
     <a class="js-moveto" @click="$store.mobileNavigation.toggle();" id="header-sp-flow">お申込みの流れ</a>
   </div>
 </div>

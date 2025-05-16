@@ -7,7 +7,8 @@
 /* tailwind customize */
 @layer base {
   body {
-    @apply font-serif font-medium leading-relaxed tracking-wider text-black;
+    font-family: 'Noto Sans', sans-serif;
+    @apply font-medium leading-relaxed tracking-wider text-black;
   }
 }
 
@@ -20,7 +21,7 @@
   }
 
   .c-marker {
-    @apply absolute left-0 w-0 h-2 bottom-1 bg-wheat;
+    @apply absolute left-0 w-0 h-4 bottom-0 bg-wheat;
   }
 
   .c-title-1 {

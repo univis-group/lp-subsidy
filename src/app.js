@@ -72,14 +72,17 @@ function setupHeaderLink() {
   // リンク設定
   const elements = [
     { id: 'header-home', href: baseUrl },
-    { id: 'header-project', href: baseUrl + "#project" },
+    { id: 'header-price', href: baseUrl + "#price" },
+    { id: 'header-features', href: baseUrl + "#features" },
     { id: 'header-flow', href: baseUrl + "#flow" },
     { id: 'header-contact', href: baseUrl + "#contact" },
-    { id: 'header-sp-project', href: baseUrl + "#project" },
+    { id: 'header-sp-price', href: baseUrl + "#price" },
+    { id: 'header-sp-features', href: baseUrl + "#features" },
     { id: 'header-sp-flow', href: baseUrl + "#flow" },
     { id: 'link-contact-a', href: baseUrl + "#contact" },
     { id: 'link-contact-b', href: baseUrl + "#contact" },
-    { id: 'footer-project', href: baseUrl + "#project" },
+    { id: 'footer-price', href: baseUrl + "#price" },
+    { id: 'footer-features', href: baseUrl + "#features" },
     { id: 'footer-flow', href: baseUrl + "#flow" },
     { id: 'footer-sp-contact', href: baseUrl + "#contact" },
   ];

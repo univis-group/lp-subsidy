@@ -10,322 +10,320 @@
 
 <body>
   <%= htmlWebpackPlugin.options.header %>
-  <main>
-    <section class="bg-center bg-cover hero px-2 py-12 md:px-8">
-      <div class="flex flex-col xl:flex-row items-center justify-center lg:justify-between max-w-screen-2xl mx-auto">
-        <div class="py-24 px-6">
-          <div class="my-10">
-            <div class="font-bold text-xl leading-relaxed lg:leading-relaxed lg:text-3xl p-6">
-              フリーランスコンサルタント人材向け<br/>
-              案件ご紹介サービス
-            </div>
-            <p class="p-6">
-              本サービスはコンサルタント経験のあるフリーランスを対象とした、<br/>
-              独自案件・高単価案件をご紹介するプロジェクトマッチングサービスです
-            </p>
+  <main id="primary" class="mt-e84 site-main">
+    <section class="relative pt-5 pb-4 bg-center bg-cover lg:pb-16 lg:mx-12 hero lg:pt-28 lg:-mb-44">
+      <img src="./img/hero-frame-top-left-sp.svg" alt="" class="absolute top-0 lg:hidden left-2">
+      <img src="./img/hero-frame-top-left.svg" alt="" class="absolute hidden lg:block top-5 left-5">
+      <img src="./img/hero-frame-bottom-right-sp.svg" alt="" class="absolute lg:hidden right-5 top-48">
+      <img src="./img/hero-frame-bottom-right.svg" alt="" class="absolute hidden lg:block right-5 -bottom-36">
+      <p class="mx-auto my-6 text-lg lg:ml-32 w-max lg:mx-0 lg:text-3xl">補助金に関心のある皆さまへ</p>
+      <p class="mb-2 text-2xl font-medium text-center text-white lg:mb-6 lg:ml-32 lg:text-6xl lg:text-left">
+        <span class="relative block px-3 py-2 mx-auto lg:px-5 lg:py-3 w-max lg:mx-0" style="background-color: rgb(41, 58, 82);">
+          <span class="" style="opacity: 1; visibility: inherit;">各種補助金申請の</span>
+          <span class="absolute inset-0 c-block-reveal-bg bg-dark-grey-blue"></span>
+        </span><span class="relative block px-3 py-2 mx-auto lg:px-5 lg:py-3 w-max lg:mx-0" style="background-color: rgb(41, 58, 82);">
+          <span class="" style="opacity: 1; visibility: inherit;">ご相談は、</span>
+          <span class="absolute inset-0 c-block-reveal-bg bg-dark-grey-blue"></span>
+        </span>
+      </p>
+      <p class="relative block mx-auto text-xl font-medium mb-28 lg:mb-8 lg:ml-32 lg:mx-0 lg:text-5xl text-dark-grey-blue w-max">
+        <span class="c-marker" style="width: 100%;"></span>
+        <span class="relative">
+          ユニヴィスグループへ
+        </span>
+      </p>
+      <p class="relative block mx-auto text-lg font-medium mb-28 lg:mb-0 lg:ml-32 lg:mx-0 lg:text-xl text-dark-grey-blue w-max">
+        ユニヴィスグループは、会計・財務・ファイナンス・法務領域の<br/>
+        コンサルティング分野にわたるプロフェッショナルファームです。
+      </p>
+      <div class="px-4 pb-36 lg:gap-8 lg:absolute lg:right-20 lg:-bottom-12 lg:w-3/4 xl:w-2/3 lg:max-w-4xl lg:px-0 lg:pb-0">
+        <div class="group flex justify-end">
+          <iframe
+            src="https://univis.co.jp/"
+            class="w-[160px] h-[160px] rounded-full overflow-hidden border-2 border-white shadow-lg
+                   transition-all duration-500 ease-in-out
+                   group-hover:w-full group-hover:h-[450px] group-hover:rounded-lg bg-white"
+          ></iframe>
+          <div>
+            <a
+              href="https://univis.co.jp/" target="_blank"
+              class="hidden group-hover:inline-block mt-2 px-2 py-2 text-sm text-gray-800 bg-white shadow-md rounded transition
+                     duration-300 hover:bg-gray-100"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" 
+                   class="w-6 h-6 text-gray-800" 
+                   fill="none" 
+                   viewBox="0 0 24 24" 
+                   stroke="currentColor" 
+                   stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7m0 0H7m10 0v10" />
+              </svg>
+            </a>
           </div>
-          <ul>
-            <li class="relative px-4 py-3 text-white lg:px-6 lg:py-4 c-block-reveal text-md 2xl:text-xl text-center" data-delay="1">
-              <span class="c-block-reveal-text">高単価案件多数(150～250万/月)</span>
-              <span class="absolute inset-0 c-block-reveal-bg bg-dark-grey-blue"></span>
+        </div>
+      </div>
+    </section>
+    <div class="lg:pb-64 bg-deep-sea-blue"></div>
+    <section id="price">
+      <div class="pt-12 pb-12 bg-deep-sea-blue">
+        <div class="container px-3 mx-auto lg:px-6 text-white">
+          <h2 data-aos="fade-up" class="relative mb-12 leading-relaxed text-center lg:mb-20 rfs:text-4xl">支援費用<span class="absolute w-40 h-0.5 transform -translate-x-1/2 bg-sky-600 -bottom-6 left-1/2"></span></h2>
+          <div class="mx-auto w-full max-w-3xl">
+            <table class="w-full text-center table-fixed">
+              <tbody>
+                <tr>
+                  <th class="w-36 border border-brownish-grey text-xl text-white bg-dark-grey-blue p-4">
+                    着手金
+                  </th>
+                  <td class="w-36 border border-brownish-grey text-2xl bg-very-light-blue text-dark-grey-blue p-4">
+                    15万円（税別）
+                  </td>
+                </tr>
+                <tr>
+                  <th class="border border-brownish-grey text-xl text-white bg-dark-grey-blue p-4">
+                    成功報酬
+                  </th>
+                  <td class="border border-brownish-grey text-2xl bg-very-light-blue text-dark-grey-blue p-4">
+                    補助金額の10%（税別）
+                  </td>
+                </tr>
+                <tr>
+                  <th class="border border-brownish-grey text-xl text-white bg-dark-grey-blue p-4">
+                    採択後支援（任意）
+                  </th>
+                  <td class="border border-brownish-grey text-2xl bg-very-light-blue text-dark-grey-blue p-4">
+                    40万円（税別）
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text-right">
+              <small>※一部補助金では支援費用が異なります。</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="pt-12 pb-36 bg-bottom bg-cover lg:pt-32 lg:pb-60 lead">
+        <div class="container px-3 mx-auto lg:px-6">
+          <h2 data-aos="fade-up" class="relative mb-12 leading-relaxed text-center lg:mb-20 rfs:text-4xl">支援の特徴・強み<span class="absolute w-40 h-0.5 transform -translate-x-1/2 bg-sky-600 -bottom-6 left-1/2"></span></h2>
+          <ul class="max-w-full mx-auto lg:text-2xl lg:min-w-[800px] lg:w-max space-y">
+            <li data-aos="fade-up" class="flex flex-col gap-2 items-baseline py-3 border-b border-black border-dotted lg:py-5">
+              <div>
+                <i class="mr-6 fas fa-check text-dark-blue"></i>
+                <span class="c-normal-marker-blue font-bold">グループの総合力を活かしたご支援</span>
+              </div>
+              <p class="px-12 w-full text-base lg:text-lg max-w-4xl mx-auto">
+                事業計画の作成や経営戦略の策定等の複数の支援実績。<br/>
+                社内に在籍する複数の戦略・人財・会計・ITコンサルタント。<br/>
+                このようなグループの総合力を活かし、採択の可能性を高める申請書類の作成をサポート致します。
+              </p>
             </li>
-            <li class="relative px-4 py-3 text-white lg:px-6 lg:py-4 c-block-reveal text-md 2xl:text-xl text-center" data-delay="2">
-              <span class="c-block-reveal-text">常時案件300件以上＆戦略・業務案件多数</span>
-              <span class="absolute inset-0 c-block-reveal-bg bg-dark-grey-blue"></span>
+            <li data-aos="fade-up" class="flex flex-col gap-2 items-baseline py-3 border-b border-black border-dotted lg:py-5">
+              <div>
+                <i class="mr-6 fas fa-check text-dark-blue"></i>
+                <span class="c-normal-marker-blue font-bold">豊富な実績と高い採択率</span>
+              </div>
+              <p class="px-12 w-full text-base lg:text-lg max-w-4xl mx-auto">
+                支援実績200件以上、平均採択率約70%<br/>
+                採択率の低い補助金もしっかりサポート致します。<br/>
+                例① 事業再構築補助金12次公募62%（全国平均約26%）<br/>
+                例② ものづくり補助金18次公募66%（全国平均約35%）
+              </p>
             </li>
-            <li class="relative px-4 py-3 text-white lg:px-6 lg:py-4 c-block-reveal text-md 2xl:text-xl text-center" data-delay="3">
-              <span class="c-block-reveal-text">コンサルファーム出身者向け案件多数</span>
-              <span class="absolute inset-0 c-block-reveal-bg bg-dark-grey-blue"></span>
+            <li data-aos="fade-up" class="flex flex-col gap-2 items-baseline py-3 border-b border-black border-dotted lg:py-5">
+              <div>
+                <i class="mr-6 fas fa-check text-dark-blue"></i>
+                <span class="c-normal-marker-blue font-bold">フルサポート可能</span>
+              </div>
+              <p class="px-12 w-full text-base lg:text-lg max-w-4xl mx-auto">
+                補助金の選定から申請書類の作成、申請作業、報告作業までフルサポート可能です。<br/>
+                はじめて補助金をご活用される方も安心してお任せいただけます。
+              </p>
+            </li>
+            <li data-aos="fade-up" class="flex flex-col gap-2 items-baseline py-3 border-b border-black border-dotted lg:py-5">
+              <div>
+                <i class="mr-6 fas fa-check text-dark-blue"></i>
+                <span class="c-normal-marker-blue font-bold">税制優遇制度の対応</span>
+              </div>
+              <p class="px-12 w-full text-base lg:text-lg max-w-4xl mx-auto">
+                補助金と併せて活用することで法人税や固定資産税の優遇が可能な「経営力向上計画」や「先端設備等導入計画」の申請サポートも可能です。<br/>
+                補助金による資金調達と税制優遇制度による節税により、お客様の資金面をバックアップします。<br/>
+                ※税制優遇制度の申請支援には別途費用が発生します。
+              </p>
             </li>
           </ul>
         </div>
-        <div id="contact" class="max-w-2xl px-4 mx-auto py-16">
-          <div class="px-8 py-8 bg-white">
-            <h2 class="text-2xl font-medium c-title-1">フリーコンサル登録フォーム
-              <span class="c-title-1-bar"></span>
-            </h2>
-            <div class="bg-dark-grey-blue text-white p-4 my-8">
-              登録いただいたフリーコンサルの方にはスキル確認と案件紹介のご連絡をさせていただきます。
-            </div>
-            <div>
-              <form id="mailformpro" action="../mailform/mailformpro/mailformpro.cgi" method="POST">
-                <div class="space-y-6">
-                  <div class="grid-cols-3 space-y-2 lg:grid lg:space-y-0">
-                    <label class="flex items-center" for="your-name">お名前<span class="c-badge">必須</span></label>
-                    <div class="lg:col-span-2">
-                      <input type="text" class="mfp_element_text mfp_element_all" name="お名前" id="your-name" size="40" required="required" placeholder="例：山田　太郎">
-                    </div>
-                  </div>
-                  <div class="grid-cols-3 space-y-2 lg:grid lg:space-y-0">
-                    <label class="flex items-center" for="your-phone">電話番号<span class="c-badge">必須</span></label>
-                    <div class="lg:col-span-2">
-                      <input type="tel" class="mfp_element_tel mfp_element_all" data-type="tel" name="電話番号" id="your-phone" size="40" data-min="9" required="required" placeholder="例：03-6459-0142">
-                    </div>
-                  </div>
-                  <div class="grid-cols-3 space-y-2 lg:grid lg:space-y-0">
-                    <label class="flex items-center" for="your-email">メールアドレス
-                      <span class="c-badge">必須</span>
-                    </label>
-                    <div class="lg:col-span-2">
-                      <input type="email" class="mfp_element_email mfp_element_all" data-type="email" name="email" id="your-email" size="40" required="required" placeholder="例：contact@univis.co.jp" />
-                    </div>
-                  </div>
-                  <div class="items-start grid-cols-3 space-y-2 lg:grid lg:space-y-0">
-                    <label class="flex items-center">経歴
-                      <span class="c-badge">必須</span>
-                      <span class="c-badge">複数選択可</span>
-                    </label>
-                    <div class="lg:col-span-2 flex flex-col gap-3 ml-3 lg:ml-0">
-                      <label>
-                        <input type="checkbox" class="mb-1 mr-2" name="経歴" required="required" data-min="1" value="コンサルティングファーム">
-                        <span>コンサルティングファーム</span>
-                      </label>
-                      <label>
-                        <input type="checkbox" class="mb-1 mr-2" name="経歴" required="required" value="シンクタンク">
-                        <span>シンクタンク</span>
-                      </label>
-                      <label>
-                        <input type="checkbox" class="mb-1 mr-2" name="経歴" required="required" value="SIer">
-                        <span>SIer</span>
-                      </label>
-                      <label>
-                        <input type="checkbox" class="mb-1 mr-2" name="経歴" required="required" value="事業会社">
-                        <span>事業会社</span>
-                      </label>
-                      <label>
-                        <input type="checkbox" class="mb-1 mr-2" name="経歴" required="required" value="その他">
-                        <span>その他</span>
-                      </label>
-                      <div id="errormsg_経歴" class="mfp_err"></div>
-                    </div>
-                  </div>
-                  <div class="space-y-2 lg:space-y-0">
-                    <p class="mb-4 text-center text-sm">
-                      ご入力いただいた個人情報は、お客様からのお問い合わせに対し適切に対応するために使用します。
-                      詳しくは<a href="https://univis.co.jp/privacy-policy/" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; text-decoration-color:#000;">プライバシーポリシー</a>をご確認ください。
-                    </p>
-                    <div class="flex justify-center">
-                      <div><label><input type="checkbox" class="mb-1 mr-2" name="プライバシーポリシー" required="required">プライバシーポリシーに同意する</span></label></div>
-                    </div>
-                  </div>
-                  <div class="mfp_buttons text-center">
-                    <button type="submit" class="text-white text-lg bg-deep-sea-blue hover:bg-deep-sea-blue-dark py-3 px-12 mfp_element_submit mfp_element_all">登録</button>
-                  </div>
-                </div>
-              </form>
-              <script type="text/javascript" id="mfpjs" src="./mailform/mailformpro/mailformpro.cgi" charset="UTF-8"></script>
-            </div>
+      </div>
+    </section>
+    <section class="relative py-16 pl-4 c-cta bg-dark-grey-blue xl:pl-24">
+      <div class="container max-w-5xl px-4 mx-auto">
+        <div data-aos="fade-up" class="max-w-5xl px-6 py-16 bg-white shadow-lg">
+          <h2 class="mb-5 text-2xl font-bold text-center text-sky-950 lg:text-3xl"><span class="inline-block">ユニヴィスグループの補助金申請支援</span></h2>
+          <p class="mb-10 lg:text-center">ご相談は、お電話またはお問い合わせフォームで承っております。</p>
+          <div class="grid max-w-xl mx-auto gap-y-4 lg:grid-cols-2 gap-x-8">
+            <a class="inline-flex items-center justify-center px-5 leading-none text-white transition-colors py-7 gap-x-4 bg-dark-grey-blue hover:bg-dark-grey-blue-dark" href="tel:03-6459-0142"><i class="fas fa-phone-alt"></i><span class="text-lg leading-none">03-6459-0142</span><i class="fas fa-chevron-right"></i></a>
+            <a class="inline-flex items-center justify-center px-5 leading-none text-white transition-colors py-7 gap-x-4 bg-deep-sea-blue hover:bg-deep-sea-blue-dark js-moveto" id="link-contact-a"><i class="fas fa-envelope"></i><span class="text-lg leading-none">お問い合わせ</span><i class="fas fa-chevron-right"></i></a>
           </div>
         </div>
       </div>
     </section>
     <section>
-      <div class="pt-12 pb-24 bg-bottom bg-cover lg:pt-32 lg:pb-48 lead">
-        <div class="container px-3 mx-auto lg:px-6">
-          <h2 data-aos="fade-up" class="relative mb-12 leading-relaxed text-center lg:mb-20 rfs:text-4xl">サービスの特徴<span class="absolute w-40 h-0.5 transform -translate-x-1/2 bg-sky-600 -bottom-6 left-1/2"></span></h2>
-          <ul class="max-w-full mx-auto lg:text-2xl lg:min-w-[800px] lg:w-max space-y">
-            <li data-aos="fade-up" class="flex flex-col gap-2 items-baseline py-3 border-b border-black border-dotted lg:py-5">
-              <div>
-                <i class="mr-6 fas fa-check text-dark-blue"></i>
-                <span class="c-normal-marker-blue font-bold">上流案件＆非公開案件多数</span>
-              </div>
-              <p class="px-12 w-full text-base lg:text-lg max-w-4xl mx-auto">
-                戦略ファームや事業会社を中心にフリーランスの方々の紹介依頼を多数いただいております。案件によっては機密性が高く他社では取り扱ってない案件をご紹介可能です。
-              </p>
-            </li>
-            <li data-aos="fade-up" class="flex flex-col gap-2 items-baseline py-3 border-b border-black border-dotted lg:py-5">
-              <div>
-                <i class="mr-6 fas fa-check text-dark-blue"></i>
-                <span class="c-normal-marker-blue font-bold">営業代行＆登録料等不要</span>
-              </div>
-              <p class="px-12 w-full text-base lg:text-lg max-w-4xl mx-auto">
-                企業様より一律で紹介料を頂く形をとっておりますので、フリーランスの方は負担なしで案件の営業代行として当サービスをご利用できます。
-              </p>
-            </li>
-            <li data-aos="fade-up" class="flex flex-col gap-2 items-baseline py-3 border-b border-black border-dotted lg:py-5">
-              <div>
-                <i class="mr-6 fas fa-check text-dark-blue"></i>
-                <span class="c-normal-marker-blue font-bold">高い報酬</span>
-              </div>
-              <p class="px-12 w-full text-base lg:text-lg max-w-4xl mx-auto">
-                弊社は営業活動の効率化と多重下請構造へのテコ入れを行っているため、他社サービスよりより高い報酬をフリーランスの方に還元します。
-              </p>
-            </li>
-          </ul>
+      <div class="pt-12 pb-12 bg-deep-sea-blue">
+        <div class="container px-3 mx-auto lg:px-6 text-white">
+          <h2 data-aos="fade-up" class="relative mb-12 leading-relaxed text-center lg:mb-20 rfs:text-4xl">支援可能な補助金（一部抜粋）<span class="absolute w-40 h-0.5 transform -translate-x-1/2 bg-sky-600 -bottom-6 left-1/2"></span></h2>
+          <div class="mx-auto w-full max-w-3xl py-8 px-10 bg-white rounded-xl shadow-[0_10px_20px_rgba(255,255,255,0.2)]  text-gray-900 text-xl">
+            <ul class="space-y-2 list-disc list-inside">
+              <li>ものづくり補助金</li>
+              <li>中小企業新事業進出促進補助金</li>
+              <li>事業承継・M&A補助金</li>
+              <li>中小企業成長加速化補助金</li>
+              <li>躍進的な事業推進のための設備支援事業（東京都）</li>
+              <li>中小企業生産性向上促進事業費補助金（神奈川県）</li>
+              <li>その他</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="flow">
+      <div class="py-12 lg:py-24">
+        <div class="container max-w-4xl px-4 mx-auto">
+          <h2 data-aos="fade-up" class="mb-10 leading-relaxed text-center lg:mb-20 rfs:text-4xl">お申込みの流れ</h2>
+          <div class="space-y-10">
+            <div class="relative bg-white rounded-2xl shadow-xl p-8 text-center">
+              <div class="absolute left-10 top-1/2 transform -translate-y-1/2 w-20 h-16 bg-dark-grey-blue text-white text-xl lg:text-3xl font-bold rounded-full flex items-center justify-center shadow">01</div>
+              <p class="text-xl lg:text-2xl font-semibold text-gray-800">お問い合わせ</p>
+            </div>
+            <img class="mx-auto" src="./img/arrow-lg-down-blue.svg" width="86" height="auto" alt="down">
+            <div class="relative bg-white rounded-2xl shadow-xl p-8 text-center">
+              <div class="absolute left-10 top-1/2 transform -translate-y-1/2 w-20 h-16 bg-dark-grey-blue text-white text-xl lg:text-3xl font-bold rounded-full flex items-center justify-center shadow">02</div>
+              <p class="text-xl lg:text-2xl font-semibold text-gray-800">初回面談（ヒアリング、補助金選定、制度説明）</p>
+            </div>
+            <img class="mx-auto" src="./img/arrow-lg-down-blue.svg" width="86" height="auto" alt="down">
+            <div class="relative bg-white rounded-2xl shadow-xl p-8 text-center">
+              <div class="absolute left-10 top-1/2 transform -translate-y-1/2 w-20 h-16 bg-dark-grey-blue text-white text-xl lg:text-3xl font-bold rounded-full flex items-center justify-center shadow">03</div>
+              <p class="text-xl lg:text-2xl font-semibold text-gray-800">ご契約</p>
+            </div>
+            <img class="mx-auto" src="./img/arrow-lg-down-blue.svg" width="86" height="auto" alt="down">
+            <div class="relative bg-white rounded-2xl shadow-xl p-8 text-center">
+              <div class="absolute left-10 top-1/2 transform -translate-y-1/2 w-20 h-16 bg-dark-grey-blue text-white text-xl lg:text-3xl font-bold rounded-full flex items-center justify-center shadow">04</div>
+              <p class="text-xl lg:text-2xl font-semibold text-gray-800">初回インタビュー</p>
+            </div>
+            <img class="mx-auto" src="./img/arrow-lg-down-blue.svg" width="86" height="auto" alt="down">
+            <div class="relative bg-white rounded-2xl shadow-xl p-8 text-center">
+              <div class="absolute left-10 top-1/2 transform -translate-y-1/2 w-20 h-16 bg-dark-grey-blue text-white text-xl lg:text-3xl font-bold rounded-full flex items-center justify-center shadow">05</div>
+              <p class="text-xl lg:text-2xl font-semibold text-gray-800">初稿提出・再打合わせ</p>
+            </div>
+            <img class="mx-auto" src="./img/arrow-lg-down-blue.svg" width="86" height="auto" alt="down">
+            <div class="relative bg-white rounded-2xl shadow-xl p-8 text-center">
+              <div class="absolute left-10 top-1/2 transform -translate-y-1/2 w-20 h-16 bg-dark-grey-blue text-white text-xl lg:text-3xl font-bold rounded-full flex items-center justify-center shadow">06</div>
+              <p class="text-xl lg:text-2xl font-semibold text-gray-800">最終稿納品</p>
+            </div>
+            <img class="mx-auto" src="./img/arrow-lg-down-blue.svg" width="86" height="auto" alt="down">
+            <div class="relative bg-white rounded-2xl shadow-xl p-8 text-center">
+              <div class="absolute left-10 top-1/2 transform -translate-y-1/2 w-20 h-16 bg-dark-grey-blue text-white text-xl lg:text-3xl font-bold rounded-full flex items-center justify-center shadow">07</div>
+              <p class="text-xl lg:text-2xl font-semibold text-gray-800">補助金申請作業</p>
+            </div>
+            <div class="text-right">
+              <small>
+                ※ご契約までは費用が発生致しません。<br/>
+                ※打合わせ回数は補助金・お客様によって異なります。
+              </small>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section class="relative py-16 pl-4 c-cta bg-dark-grey-blue xl:pl-24">
       <div class="container max-w-5xl px-4 mx-auto">
         <div data-aos="fade-up" class="max-w-5xl px-6 py-16 bg-white shadow-lg">
-          <h2 class="mb-5 text-2xl font-bold text-center text-sky-950 lg:text-3xl"><span class="inline-block">ユニヴィスグループの案件ご紹介サービス</span></h2>
-          <p class="mb-10 lg:text-center">ご相談は、お電話またはコンサル登録フォームで承っております。</p>
+          <h2 class="mb-5 text-2xl font-bold text-center text-sky-950 lg:text-3xl"><span class="inline-block">ユニヴィスグループの補助金申請支援</span></h2>
+          <p class="mb-10 lg:text-center">ご相談は、お電話またはお問い合わせフォームで承っております。</p>
           <div class="grid max-w-xl mx-auto gap-y-4 lg:grid-cols-2 gap-x-8">
             <a class="inline-flex items-center justify-center px-5 leading-none text-white transition-colors py-7 gap-x-4 bg-dark-grey-blue hover:bg-dark-grey-blue-dark" href="tel:03-6459-0142"><i class="fas fa-phone-alt"></i><span class="text-lg leading-none">03-6459-0142</span><i class="fas fa-chevron-right"></i></a>
-            <a class="inline-flex items-center justify-center px-5 leading-none text-white transition-colors py-7 gap-x-4 bg-deep-sea-blue hover:bg-deep-sea-blue-dark" id="link-contact-a"><i class="fas fa-envelope"></i><span class="text-lg leading-none">コンサル登録</span><i class="fas fa-chevron-right"></i></a>
+            <a class="inline-flex items-center justify-center px-5 leading-none text-white transition-colors py-7 gap-x-4 bg-deep-sea-blue hover:bg-deep-sea-blue-dark js-moveto" id="link-contact-b"><i class="fas fa-envelope"></i><span class="text-lg leading-none">お問い合わせ</span><i class="fas fa-chevron-right"></i></a>
           </div>
         </div>
       </div>
     </section>
-    <section id="project" class=" ">
-      <div class="py-12 lg:py-24">
-        <div class="container max-w-7xl px-4 mx-auto">
-          <h2 data-aos="fade-up" class="relative mb-12 leading-relaxed text-center lg:mb-20 rfs:text-4xl">案件<span class="absolute w-40 h-0.5 transform -translate-x-1/2 bg-sky-600 -bottom-6 left-1/2"></span></h2>
-          <div class="grid grid-cols-1 lg:grid-cols-3 items-center lg:items-stretch justify-center gap-6">
-            <div class="justify-self-center bg-slate-50 border border-gray-200 rounded-lg shadow col-span-1">
-              <img class="rounded-t-lg" src="./img/card1.png" alt="" />
-              <h5 class="mx-4 mt-3 mb-6 text-2xl font-bold text-gray-900">(戦略系) 大手メーカーロジスティクス部門の中長期戦略策定</h5>
-              <ul class="bg-white mx-2 my-3 py-2">
-                <li class="my-2">
-                  【役割／タスク】
-                  <ul class="pl-3">
-                    <li>・社内のステークホルダーやサプライヤーからの期待やニーズのヒアリング</li>
-                    <li>・他社のビジョン調査</li>
-                    <li>・ワークショップ運営、戦略課題整理、ロードマップ作成</li>
-                    <li>・中間報告、最終報告資料の作成</li>
-                  </ul>
-                </li>
-                <li class="my-2">【月額報酬】200万円</li>
-                <li class="my-2">【稼働率】50～100%</li>
-              </ul>
-            </div>
-            <div class="justify-self-center bg-slate-50 border border-gray-200 rounded-lg shadow col-span-1">
-              <img class="rounded-t-lg" src="./img/card1.png" alt="" />
-              <h5 class="mx-4 mt-3 mb-6 text-2xl font-bold text-gray-900">(戦略系) 大手ファンド向けDD(デューデリジェンス)支援</h5>
-              <ul class="bg-white mx-2 my-3 py-2">
-                <li class="my-2">
-                  【役割／タスク】
-                  <ul class="pl-3">
-                    <li>・市場/競合調査</li>
-                    <li>・エキスパートインタビュー</li>
-                    <li>・資料作成</li>
-                    <li>・モデル構成支援</li>
-                  </ul>
-                </li>
-                <li class="my-2">【月額報酬】250万円</li>
-                <li class="my-2">【稼働率】100%</li>
-              </ul>
-            </div>
-            <div class="justify-self-center bg-slate-50 border border-gray-200 rounded-lg shadow col-span-1">
-              <img class="rounded-t-lg" src="./img/card1.png" alt="" />
-              <h5 class="mx-4 mt-3 mb-6 text-2xl font-bold text-gray-900">(戦略/業務) 某電力会社向けメーカー新サービス構築の構想策定</h5>
-              <ul class="bg-white mx-2 my-3 py-2">
-                <li class="my-2">
-                  【役割／タスク】
-                  <ul class="pl-3">
-                    <li>・新サービスの企画および計画作成に関するPMO業務</li>
-                    <li>・経営フレームワークを活用し自走支援</li>
-                  </ul>
-                </li>
-                <li class="my-2">【月額報酬】200万円</li>
-                <li class="my-2">【稼働率】100%</li>
-              </ul>
-            </div>
-            <div class="justify-self-center bg-slate-50 border border-gray-200 rounded-lg shadow col-span-1">
-              <img class="rounded-t-lg" src="./img/card1.png" alt="" />
-              <h5 class="mx-4 mt-3 mb-6 text-2xl font-bold text-gray-900">(業務) 大手自動車メーカーにおける生産部門のPMO支援</h5>
-              <ul class="bg-white mx-2 my-3 py-2">
-                <li class="my-2">
-                  【役割／タスク】
-                  <ul class="pl-3">
-                    <li>・定例会参加、議事録作成、TODO整理</li>
-                    <li>・検証結果や課題の資料作成</li>
-                    <li>・対策検討</li>
-                    <li>・会議アジェンダの検討</li>
-                  </ul>
-                </li>
-                <li class="my-2">【月額報酬】250万円</li>
-                <li class="my-2">【稼働率】100%</li>
-              </ul>
-            </div>
-            <div class="justify-self-center bg-slate-50 border border-gray-200 rounded-lg shadow col-span-1">
-              <img class="rounded-t-lg" src="./img/card1.png" alt="" />
-              <h5 class="mx-4 mt-3 mb-6 text-2xl font-bold text-gray-900">(IT/DX) 大手飲料会社向けSCM更改案件支援</h5>
-              <ul class="bg-white mx-2 my-3 py-2">
-                <li class="my-2">
-                  【役割／タスク】
-                  <ul class="pl-3">
-                    <li>・開発PMOとして顧客調整・推進支援</li>
-                    <li>・資料整理と作成</li>
-                  </ul>
-                </li>
-                <li class="my-2">【月額報酬】180万円</li>
-                <li class="my-2">【稼働率】50～100%</li>
-              </ul>
-            </div>
-            <div class="justify-self-center bg-slate-50 border border-gray-200 rounded-lg shadow col-span-1">
-              <img class="rounded-t-lg" src="./img/card1.png" alt="" />
-              <h5 class="mx-4 mt-3 mb-6 text-2xl font-bold text-gray-900">(IT/システム刷新) 大規模基幹システムのリプレースにおけるテスト推進PMOリーダー</h5>
-              <ul class="bg-white mx-2 my-3 py-2">
-                <li class="my-2">
-                  【役割／タスク】
-                  <ul class="pl-3">
-                    <li>・大規模基幹システムのリプレースの総合テストフェーズにおける、テスト推進PMOリーダーとして支援していただく</li>
-                    <li>・全体進捗、タスクの管理</li>
-                    <li>・部署間のタスク管理、推進等を横断して行う</li>
-                    <li>・品質、リスク、課題の管理</li>
-                  </ul>
-                </li>
-                <li class="my-2">【月額報酬】210万円</li>
-                <li class="my-2">【稼働率】～100%</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="flow" class=" ">
-      <div class="py-12 lg:py-24">
+    <section id="contact">
+      <div class="py-12 lg:py-24 bg-gray-100">
         <div class="container max-w-6xl px-4 mx-auto">
-          <h2 data-aos="fade-up" class="mb-10 leading-relaxed text-center lg:mb-20 rfs:text-4xl">お申込みの流れ<br>Flow</h2>
-          <div class="space-y-6">
-            <section data-aos="fade-up" class="bg-white shadow-lg">
-              <h3 class="relative p-4 text-xl text-center text-white lg:text-3xl bg-dark-grey-blue"><span class="mr-3 transform -translate-y-1/2 lg:mr-0 lg:absolute top-1/2 left-12">01</span>エントリー</h3>
-              <div class="p-4">
-                <p class="prose lg:prose-lg max-w-4xl mx-auto">お気軽に電話又はコンサル登録フォームからご登録下さい</p>
+          <h2 class="text-2xl font-medium c-title-1 lg:text-4xl">お問い合わせ
+            <span class="c-title-1-bar"></span>
+          </h2>
+          <div>
+            <form id="mailformpro" action="../mailform/mailformpro/mailformpro.cgi" method="POST">
+              <div class="space-y-10 p-6">
+                <div class="grid-cols-3 space-y-2 lg:grid lg:space-y-0">
+                  <label class="flex items-center" for="company-name">企業名<span class="c-badge">必須</span></label>
+                  <div class="lg:col-span-2">
+                    <input type="text" class="mfp_element_text mfp_element_all" name="企業名" id="company-name" size="40" required="required" placeholder="例：株式会社ユニヴィス">
+                  </div>
+                </div>
+                <div class="grid-cols-3 space-y-2 lg:grid lg:space-y-0">
+                  <label class="flex items-center" for="department">部署</label>
+                  <div class="lg:col-span-2">
+                    <input type="text" class="mfp_element_text mfp_element_all" name="部署" id="department" size="40" placeholder="例：営業部">
+                  </div>
+                </div>
+                <div class="grid-cols-3 space-y-2 lg:grid lg:space-y-0">
+                  <label class="flex items-center" for="position">役職</label>
+                  <div class="lg:col-span-2">
+                    <input type="text" class="mfp_element_text mfp_element_all" name="役職" id="position" size="40" placeholder="例：部長">
+                  </div>
+                </div>
+                <div class="grid-cols-3 space-y-2 lg:grid lg:space-y-0">
+                  <label class="flex items-center" for="your-name">お名前<span class="c-badge">必須</span></label>
+                  <div class="lg:col-span-2">
+                    <input type="text" class="mfp_element_text mfp_element_all" name="お名前" id="your-name" size="40" required="required" placeholder="例：山田　太郎">
+                  </div>
+                </div>
+                <div class="grid-cols-3 space-y-2 lg:grid lg:space-y-0">
+                  <label class="flex items-center" for="your-phonetic-name">ふりがな<span class="c-badge">必須</span></label>
+                  <div class="lg:col-span-2">
+                    <input type="text" class="mfp_element_text mfp_element_all" name="ふりがな" id="your-phonetic-name" size="40" required="required" placeholder="例：やまだ　たろう">
+                  </div>
+                </div>
+                <div class="grid-cols-3 space-y-2 lg:grid lg:space-y-0">
+                  <label class="flex items-center" for="your-phone">お電話番号<span class="c-badge">必須</span></label>
+                  <div class="lg:col-span-2">
+                    <input type="tel" class="mfp_element_tel mfp_element_all" data-type="tel" name="電話番号" id="your-phone" size="40" data-min="9" required="required" placeholder="例：03-6459-0142">
+                  </div>
+                </div>
+                <div class="grid-cols-3 space-y-2 lg:grid lg:space-y-0">
+                  <label class="flex items-center" for="your-email">メールアドレス
+                    <span class="c-badge">必須</span>
+                  </label>
+                  <div class="lg:col-span-2">
+                    <input type="email" class="mfp_element_email mfp_element_all" data-type="email" name="email" id="your-email" size="40" required="required" placeholder="例：contact@univis.co.jp" />
+                  </div>
+                </div>
+                <div class="items-start grid-cols-3 space-y-2 lg:grid lg:space-y-0">
+                  <label class="flex items-center" for="message">お問い合わせ内容
+                    <span class="c-badge">必須</span>
+                  </label>
+                  <div class="lg:col-span-2">
+                    <textarea name="お問い合わせ内容" id="message" class="mfp_element_textarea mfp_element_all" cols="40" rows="10" required="required" placeholder="具体的なご相談内容をご記入ください。ご依頼したい内容を可能な限り詳細にご記入いただけますと、その後のご相談がスムーズに進みます。"></textarea>
+                  </div>
+                </div>
+                <div class="space-y-2 lg:space-y-0">
+                  <p class="mb-4 text-center">
+                    ご入力いただいた個人情報は、お客様からのお問い合わせに対し適切に対応するために使用します。
+                    詳しくは<a href="https://univis.co.jp/privacy-policy/" target="_blank" rel="noopener noreferrer" style="text-decoration:underline; text-decoration-color:#000;">プライバシーポリシー</a>をご確認ください。
+                  </p>
+                  <div class="flex justify-center">
+                    <div><label><input type="checkbox" class="mb-1 mr-2" name="プライバシーポリシー" required="required">プライバシーポリシーに同意する</span></label></div>
+                  </div>
+                </div>
+                <div class="mfp_buttons text-center">
+                  <button type="submit" class="text-white text-lg bg-deep-sea-blue hover:bg-deep-sea-blue-dark py-3 px-12 mfp_element_submit mfp_element_all">送信</button>
+                </div>
               </div>
-            </section>
-            <img class="mx-auto" src="./img/arrow-lg-down-blue.svg" width="86" height="auto" alt="down">
-            <section data-aos="fade-up" class="bg-white shadow-lg">
-              <h3 class="relative p-4 text-xl text-center text-white lg:text-3xl bg-dark-grey-blue"><span class="mr-3 transform -translate-y-1/2 lg:mr-0 lg:absolute top-1/2 left-12">02</span>ご登録面談</h3>
-              <div class="p-4">
-                <p class="prose lg:prose-lg max-w-4xl mx-auto">
-                  弊社の企業担当が直接面談を実施し、ご経験やご希望を詳細にお伺いします。
-                </p>
-              </div>
-            </section>
-            <img class="mx-auto" src="./img/arrow-lg-down-blue.svg" width="86" height="auto" alt="down">
-            <section data-aos="fade-up" class="bg-white shadow-lg">
-              <h3 class="relative p-4 text-xl text-center text-white lg:text-3xl bg-dark-grey-blue"><span class="mr-3 transform -translate-y-1/2 lg:mr-0 lg:absolute top-1/2 left-12">03</span>案件ご紹介・面談</h3>
-              <div class="p-4">
-                <p class="prose lg:prose-lg max-w-4xl mx-auto">
-                  ご希望に沿った案件をデータベースからご紹介。<br/>
-                  ご面談の対策などサポートいたします。
-                </p>
-              </div>
-            </section>
-            <img class="mx-auto" src="./img/arrow-lg-down-blue.svg" width="86" height="auto" alt="down">
-            <section data-aos="fade-up" class="bg-white shadow-lg">
-              <h3 class="relative p-4 text-xl text-center text-white lg:text-3xl bg-dark-grey-blue"><span class="mr-3 transform -translate-y-1/2 lg:mr-0 lg:absolute top-1/2 left-12">04</span>入場・フォローアップ</h3>
-              <div class="p-4">
-                <p class="prose lg:prose-lg max-w-4xl mx-auto">
-                  プロジェクト入場後についても弊社の担当者が定期的にフォロー。<br />
-                  プロジェクト終了後も継続的な案件受注に繋がる支援を行います。
-                </p>
-              </div>
-            </section>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="relative py-16 pl-4 c-cta bg-dark-grey-blue xl:pl-24">
-      <div class="container max-w-5xl px-4 mx-auto">
-        <div data-aos="fade-up" class="max-w-5xl px-6 py-16 bg-white shadow-lg">
-          <h2 class="mb-5 text-2xl font-bold text-center text-sky-950 lg:text-3xl"><span class="inline-block">ユニヴィスグループの案件ご紹介サービス</span></h2>
-          <p class="mb-10 lg:text-center">ご相談は、お電話またはコンサル登録フォームで承っております</p>
-          <div class="grid max-w-xl mx-auto gap-y-4 lg:grid-cols-2 gap-x-8">
-            <a class="inline-flex items-center justify-center px-5 leading-none text-white transition-colors py-7 gap-x-4 bg-dark-grey-blue hover:bg-dark-grey-blue-dark" href="tel:03-6459-0142"><i class="fas fa-phone-alt"></i><span class="text-lg leading-none">03-6459-0142</span><i class="fas fa-chevron-right"></i></a>
-            <a class="inline-flex items-center justify-center px-5 leading-none text-white transition-colors py-7 gap-x-4 bg-deep-sea-blue hover:bg-deep-sea-blue-dark" id="link-contact-b"><i class="fas fa-envelope"></i><span class="text-lg leading-none">コンサル登録</span><i class="fas fa-chevron-right"></i></a>
+            </form>
+            <script type="text/javascript" id="mfpjs" src="../mailform/mailformpro/mailformpro.cgi" charset="UTF-8"></script>
           </div>
         </div>
       </div>
