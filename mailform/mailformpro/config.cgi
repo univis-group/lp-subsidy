@@ -126,8 +126,8 @@ $_TEXT{'responder'} = <<'__return_body__';
 東京都港区虎ノ門3-8-8
 NTT虎ノ門ビル6階
 
-TEL：03-6459-0142
-URL:https://univis.co.jp/site/lp-accounting/
+TEL: 03-6459-0142
+URL: https://univis.co.jp/site/lp-subsidy/
 ----------------------------------------
 __return_body__
 
