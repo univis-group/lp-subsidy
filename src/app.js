@@ -66,7 +66,7 @@ function setupHeaderLink() {
     baseUrl = 'http://' + window.location.host + '/';
   } else {
     // 本番環境
-    baseUrl = 'https://' + window.location.host + '/site/lp-freelance/';
+    baseUrl = 'https://' + window.location.host + '/site/lp-subsidy/';
   }
 
   // リンク設定
