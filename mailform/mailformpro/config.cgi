@@ -9,12 +9,7 @@ $config{'ConfirmationMode'} = 3;
 $config{'sendmail'} = '/usr/sbin/sendmail';
 
 ## フォームの宛先
-push @mailto,'h.shiokawa@univis.co.jp';
-push @mailto,'t.watanabe@univis.co.jp';
-push @mailto,'y.sakai@univis.co.jp';
-push @mailto,'y.mori@univis.co.jp';
-push @mailto,'h.watanabe@univis.co.jp';
-push @mailto,'contact@univis.co.jp';
+push @mailto,'dl-contact-subsidy@univis.co.jp';
 
 ## 管理者宛メールのCC・BCCの宛先
 #$config{'admin_cc'} = 'support@synck.com';
@@ -24,7 +19,7 @@ push @mailto,'contact@univis.co.jp';
 #$config{'responder_cc'} = 'support@synck.com';
 
 ## 自動返信メールの差出人名
-$config{'fromname'} = 'ユニヴィスの案件ご紹介サービス';
+$config{'fromname'} = 'ユニヴィスの補助金申請支援';
 
 ## 自動返信メールの差出人メールアドレス
 $config{'mailfrom'} = 'contact@univis.co.jp';
@@ -57,8 +52,20 @@ $_TEXT{'posted'} = <<'__posted_body__';
 「ユニヴィスの補助金申請支援LPからお問い合わせがありました」
 ──────────────────────────
 
+企業名:
+<_企業名_>
+
+部署:
+<_部署_>
+
+役職:
+<_役職_>
+
 お名前:
 <_お名前_>
+
+ふりがな:
+<_ふりがな_>
 
 電話番号:
 <_電話番号_>
@@ -66,8 +73,8 @@ $_TEXT{'posted'} = <<'__posted_body__';
 メールアドレス:
 <_email_>
 
-経歴:
-<_経歴_>
+お問い合わせ内容:
+<_お問い合わせ内容_>
 
 ──────────────────────────
 
@@ -77,17 +84,29 @@ __posted_body__
 ## 自動返信メールの件名 (有効にする場合は下記の行頭#を外してください。)
 ## ※※※！！！※※※！！！※※※！！！※※※！！！※※※！！！※※※
 
-$config{"ReturnSubject"} = 'ユニヴィスの案件ご紹介サービス "ご登録ありがとうございます。"';
+$config{"ReturnSubject"} = 'ユニヴィスの補助金申請支援 "ご登録ありがとうございます。"';
 
 ## 自動返信メールの本文
 $_TEXT{'responder'} = <<'__return_body__';
-ご登録ありがとうございました。
-お客様の登録内容は以下の通りです。
+お問い合わせありがとうございました。
+お客様の送信内容は以下の通りです。
 
 ========================================
 
+企業名:
+<_企業名_>
+
+部署:
+<_部署_>
+
+役職:
+<_役職_>
+
 お名前:
 <_お名前_>
+
+ふりがな:
+<_ふりがな_>
 
 電話番号:
 <_電話番号_>
@@ -95,8 +114,8 @@ $_TEXT{'responder'} = <<'__return_body__';
 メールアドレス:
 <_email_>
 
-経歴:
-<_経歴_>
+お問い合わせ内容:
+<_お問い合わせ内容_>
 
 ========================================
 
@@ -108,7 +127,7 @@ $_TEXT{'responder'} = <<'__return_body__';
 NTT虎ノ門ビル6階
 
 TEL：03-6459-0142
-URL:https://univis.co.jp/site/lp-freelance/
+URL:https://univis.co.jp/site/lp-accounting/
 ----------------------------------------
 __return_body__
 
